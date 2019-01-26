@@ -1,0 +1,22 @@
+.rangeList{
+	margin: 8vh 5vh; 
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	
+}
+
+.default{
+	background-color: transparent;
+	color:grey;
+	border:none;
+
+	margin-bottom: 50px;
+}
+
+.default:hover{
+	cursor: pointer;
+	color:rgba(255, 67, 95, 0.93);
+}
