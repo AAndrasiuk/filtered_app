@@ -1,5 +1,9 @@
 .imgMain{
 	max-width: 70%;
+	margin-top: 25px;
+	transition: all .4s;
+}
 
-	margin-top: 50px;
+.imgMain:hover{
+	box-shadow: 0px 0px 17px -3px rgba(0,0,0,0.75);
 }

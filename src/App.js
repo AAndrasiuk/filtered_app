@@ -7,8 +7,8 @@ import Layout from './Components/Layout/Layout'
 import Main from './Components/Main/Main'
 import ImageContainer from './Components/ImageContainer/ImageContainer'
 import logo from './Img/Untitled-1.png'
-import filter_pic_1 from './Img/filter_example_1.jpeg'
-
+import filter_pic_1 from './Img/filter_example_1.jpeg' 
+import InputWrapper from './Components/InputWrapper/InputWrapper'
 
 
 class App extends Component {
@@ -122,10 +122,14 @@ class App extends Component {
     this.setState({ settings })
   }
 
-  setFilter = (id) => {
+  setFilter = id => {
     const filter = this.state.filters[id].settings;
     const settings = {...this.state.settings, ...filter};
     this.setState({ settings })
+  }
+
+  setUrlPic = imgUrl => {
+    imgUrl !== '' && this.setState({ imgUrl })
   }
 
   render() {
@@ -145,6 +149,9 @@ class App extends Component {
             filtersSettings={this.state.filtersSettings}
           />
           <ImageContainer>
+            <InputWrapper
+               setUrlPic={this.setUrlPic}
+            />
             <Image 
               settings={this.state.settings}
               src={this.state.imgUrl}
