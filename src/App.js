@@ -2,13 +2,12 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './Components/Header/Header'
 import Aside from './Components/Aside/Aside'
-import Image from './Components/Image/Image'
 import Layout from './Components/Layout/Layout'
 import Main from './Components/Main/Main'
 import ImageContainer from './Components/ImageContainer/ImageContainer'
 import logo from './Img/Untitled-1.png'
 import filter_pic_1 from './Img/filter_example_1.jpeg' 
-import InputWrapper from './Components/InputWrapper/InputWrapper'
+
 
 
 class App extends Component {
@@ -148,15 +147,11 @@ class App extends Component {
             setFilter={this.setFilter}
             filtersSettings={this.state.filtersSettings}
           />
-          <ImageContainer>
-            <InputWrapper
-               setUrlPic={this.setUrlPic}
-            />
-            <Image 
-              settings={this.state.settings}
-              src={this.state.imgUrl}
-            />
-          </ImageContainer>
+          <ImageContainer 
+            setUrlPic={this.setUrlPic}
+            settings={this.state.settings}
+            imgUrl={this.state.imgUrl}
+          />
         </Main>
       </Layout>
     )

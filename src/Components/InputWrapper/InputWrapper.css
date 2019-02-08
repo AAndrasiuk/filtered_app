@@ -7,12 +7,15 @@
 
 .Input{
 	box-sizing: border-box;
-	height: 33px;
+	height: 35px;
 	width: 600px;
 	background-color: transparent;
 	border-radius: 5px;
-	border:1px solid white;
-	color:rgba(255,255,255,.7);
+	/* border:1px solid white; */
+	border:none;	
+	color:rgba(255,255,255,.3);
+	background-color: #111111;
+	background-color: #15171A;
 	padding: 5px 10px;
 	
 	max-width: 70%;
@@ -54,7 +57,10 @@
 	animation:slidebg 2s linear infinite;
 	cursor: pointer;
 	color:#f2435d;
-	
+ }
+
+ .Button:hover:after{
+	background-color: #15171A;
  }
  
  @keyframes slidebg {

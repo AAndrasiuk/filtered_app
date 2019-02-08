@@ -14,6 +14,10 @@ export default function FilterList(props){
 
 	return(
 		<div className='filterList'>
+			<button 
+				className='default'
+				onClick={props.setDefault}
+			>Use Default</button>
 			{FILTERS}
 		</div>
 	)

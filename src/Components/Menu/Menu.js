@@ -9,9 +9,6 @@ export default function Menu(){
 				<NavLink to="/" className="menu__link" activeClassName={'menu__link-active'} exact>Manual</NavLink>
 				<NavLink to="/filters" className="menu__link" activeClassName={'menu__link-active'}>Filters</NavLink>
 			</nav>
-			 
-		
-		
 		</div>
 	)
 }

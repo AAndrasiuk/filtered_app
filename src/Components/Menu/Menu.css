@@ -1,6 +1,6 @@
 .menu{
 	margin-top: 50px;
-	height: 40px;
+	height: 35px;
 	width: 175px;
 	display: flex;
 	
@@ -12,7 +12,6 @@
 	text-decoration: none;
 	text-align: center;
 	color:#fff;
-	display: block;
 	background-color: #1A1D23;
 	width: 50%;
 	height: 100%;

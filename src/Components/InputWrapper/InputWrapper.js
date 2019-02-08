@@ -1,34 +1,39 @@
-import React from 'react';
+import React,{ useState } from 'react';
 import './InputWrapper.css';
+import '../Preloader/Preloader'
 
-export default class InputWrapper extends React.Component{
-	state = {
-		url: ''
+export default function InputWrapper(props){
+
+	const [url, setUrl] = useState('')
+
+	const fetchUrl = () => {
+		if (url !== '') {	
+			props.loadingHandler(false)
+			setTimeout(() => {
+				fetch(url)
+				.then(props.setUrlPic(url))
+				.then(() => props.loadingHandler(true))
+				.catch(err => console.log(err))
+			}, 1000)
+		}
 	}
 
-	urlHandler = event => {
-		const {name, value} = event.target
-		this.setState({ [name] : value })
-	}
-
-	render(){
 		return(
 			<div className="InputWrapper">
 				<input 
 					type="text" 
 					className='Input' 
-					placeholder="Enter URL"
-					value={this.state.url}
-					onChange={this.urlHandler}
+					placeholder="Enter URL..."
+					value={url}
+					onChange={e => setUrl(e.target.value)}
 					name="url"
 					/>
 				<button 
 					className='Button' 
 					alt="Use URL pic"
-					onClick={() => this.props.setUrlPic(this.state.url)}
+					onClick={fetchUrl}
 				>
 				</button>
 			</div>
 		)
-	}
 }

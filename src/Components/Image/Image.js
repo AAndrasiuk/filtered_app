@@ -9,11 +9,13 @@ export default function Image(props){
 	}
 
 	return(
-		<img
-			src={props.src}
-			alt=''
-			style={styles}
-			className='imgMain'
-		/>
+		<div className="Img">
+			<img
+				src={props.src}
+				alt=''
+				style={styles}
+				className='imgMain'
+				/>
+		</div>
 	)
 }

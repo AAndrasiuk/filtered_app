@@ -26,6 +26,7 @@ export default function Aside(props){
 					<FilterList 
 						 filters={props.filters}
 						 setFilter={props.setFilter}		
+						 setDefault={props.setDefault}
 					/>} 
 			/>
 		</aside>
