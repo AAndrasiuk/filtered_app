@@ -12,8 +12,8 @@ export default function Aside(props){
 			<Menu />
 			<Route 
 				exact 
-				path={baseUrl + '/'} 
-				// path='/'
+				// path={baseUrl + '/'} 
+				path='/'
 				render={() => 
 					<RangeList 
 						settings={props.settings}
@@ -23,8 +23,8 @@ export default function Aside(props){
 					/>} 
 			/>
 			<Route 
-				path={baseUrl +'/filters'} 
-				// path='/filters' 
+				// path={'/filters'} 
+				path='/filters' 
 				render={() => 
 					<FilterList 
 						 filters={props.filters}
