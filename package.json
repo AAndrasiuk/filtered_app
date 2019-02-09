@@ -3,7 +3,7 @@
   "license": "MIT",
   "name": "filtered",
   "version": "0.5.0",
-  "homepage": "https:/AAndrasiuk.github.io//filtered_app",
+  "homepage": "https:/AAndrasiuk.github.io/filtered_app",
   "private": true,
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
@@ -27,7 +27,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",

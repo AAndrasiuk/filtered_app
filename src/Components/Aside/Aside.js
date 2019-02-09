@@ -6,12 +6,14 @@ import FilterList from '../FilterList/FilterList'
 import Menu from '../Menu/Menu'
 
 export default function Aside(props){
+	const baseUrl = process.env.PUBLIC_URL;
 	return(
 		<aside>
 			<Menu />
 			<Route 
 				exact 
-				path='/' 
+				path={baseUrl + '/'} 
+				// path='/'
 				render={() => 
 					<RangeList 
 						settings={props.settings}
@@ -21,7 +23,8 @@ export default function Aside(props){
 					/>} 
 			/>
 			<Route 
-				path='/filters' 
+				path={baseUrl +'/filters'} 
+				// path='/filters' 
 				render={() => 
 					<FilterList 
 						 filters={props.filters}
