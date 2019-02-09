@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/AAndrasiuk.github.io//filtered_app/static/js/runtime~main.01b85936.js"
   },
   {
-    "revision": "4bcb56f94e28a7e460ac",
-    "url": "/AAndrasiuk.github.io//filtered_app/static/js/main.4bcb56f9.chunk.js"
+    "revision": "811a1ba0f6b6fdc5fb84",
+    "url": "/AAndrasiuk.github.io//filtered_app/static/js/main.811a1ba0.chunk.js"
   },
   {
-    "revision": "99cf8247513f774b0375",
-    "url": "/AAndrasiuk.github.io//filtered_app/static/js/1.99cf8247.chunk.js"
+    "revision": "89df076f12d9e1c6d30d",
+    "url": "/AAndrasiuk.github.io//filtered_app/static/js/1.89df076f.chunk.js"
   },
   {
-    "revision": "4bcb56f94e28a7e460ac",
+    "revision": "811a1ba0f6b6fdc5fb84",
     "url": "/AAndrasiuk.github.io//filtered_app/static/css/main.c10d9b80.chunk.css"
   },
   {
-    "revision": "7f28e8ead3d2da70d7ef85b0b3943bf4",
+    "revision": "80442ee0f27b7edc0a8687e150fe8c14",
     "url": "/AAndrasiuk.github.io//filtered_app/index.html"
   }
 ];
