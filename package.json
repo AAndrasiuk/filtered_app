@@ -1,8 +1,25 @@
 {
+  "author": "Aliaksandr Andrasiuk",
+  "license": "MIT",
   "name": "filtered",
-  "version": "0.1.0",
+  "version": "0.5.0",
+  "homepage": "https:/AAndrasiuk.github.io//filtered_app",
   "private": true,
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AAndrasiuk/filtered_app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AAndrasiuk/filtered_app/issues"
+  },
+  "devDependencies": {
+    "gh-pages": "2.0.1",
+    "react-scripts": "2.1.3"
+  },
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "react-router-dom": "^4.3.1",
@@ -10,6 +27,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -23,4 +42,5 @@
     "not ie <= 11",
     "not op_mini all"
   ]
+  
 }
