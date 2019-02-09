@@ -2,7 +2,7 @@ An application with the possibility to apply different filters to images.
 You can insert image URL into the input field and work with your images.
 
 ## In plans
-### `Make this app responsiveness.`
+### `Make this app responsive.`
 ### `Add possibility to save image after filtres applied.`
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
