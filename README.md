@@ -6,9 +6,9 @@ You can insert image URL into the input field and apply filters to your image.
 `Make this app responsive.`
 `Add possibility to save image after filtres applied.`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ### `npm start`
 
 Runs the app in the development mode.<br>
