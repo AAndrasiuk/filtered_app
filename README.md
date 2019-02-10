@@ -4,7 +4,7 @@ You can insert image URL into the input field and apply filters to your image.
 
 ## In plans
 `Make this app responsive.`
-`Add possibility to save image after filtres applied.`
+`Add possibility to save image after filters applied.`
 
 
 ## Available Scripts
