@@ -1,0 +1,149 @@
+@media  screen and (min-width: 1171px){
+	.main{
+		grid-template-columns: 1fr 5fr;
+	}
+
+	.InputWrapper{
+		margin-top: 50px;
+	}
+
+	.aside{
+		padding:0 40px;
+	}
+
+
+	.Img{
+		max-width: 75%;
+	}
+	input[type=range] {
+		-webkit-appearance: none;
+		width:15vw;
+	 }
+	.Input{
+		width: 40vw;
+	}
+	.Button {
+		width:calc(10vw + 5px);
+ }
+ .Button:after {
+	content:attr(alt);
+		width:15vw;
+}
+
+
+}
+
+@media  screen and (min-width: 749px) and (max-width: 1170px){
+	.main{
+	  grid-template-columns: 1fr 6fr;
+	}
+	.InputWrapper{
+		margin-top: 50px;
+	}
+	.aside{
+		padding:0 30px;
+	}
+	.Img{
+		max-width: 90%;
+	}
+	input[type=range] {
+		-webkit-appearance: none;
+		width:20vw;
+	 }
+	.Input{
+		width: 48vw;
+	}
+
+	.Button{
+		width: calc(10vw + 5px);
+	}
+
+	.Button:after {
+		content:attr(alt);
+		width:10vw;
+}
+
+
+}
+ @media  screen and (max-width: 768px){
+	.main{
+	  grid-template-columns: 1fr 7fr;
+	}
+	.InputWrapper{
+		margin-top: 50px;
+	}
+	.aside{
+		padding:0 20px;
+	}
+	.Img{
+		max-width: 90%;	
+	}
+
+	.Button:after {
+		content:'Use URL';
+		width:15vw;
+}
+
+ }
+ @media  screen and (max-width: 600px){
+	.main{
+	  grid-template-columns: 1fr;
+	  grid-template-rows: 1fr 1fr;
+	}
+
+	.Img{
+		max-width: 100%;	
+	}	
+	
+	input[type=range] {
+		-webkit-appearance: none;
+		width:50vw;
+	 }
+
+	.aside{
+		order: 1;
+		margin-bottom: 60px;
+		height:50vh;
+		border:none;
+		position: relative;
+	}
+
+	.imageContainer{
+		order: 0;
+		height:50vh;
+	}
+
+	 .Input{
+		width: 65vw;
+	}
+
+	.Button{
+		width: calc(20vw + 5px);
+	}
+	.Button:after {
+		width:20vw;
+}
+	.InputWrapper{
+		margin-top: 15px;
+	} 
+ .rangeWrapper{
+	 margin-bottom: 50px;
+ }
+
+ .filterList{
+	 flex-direction: row;
+	 margin-top: 80px;
+ }
+
+ .filter{
+	margin-right: 20px;
+ }
+
+ .filterList .default{
+	 position: absolute;
+	 top:90px;
+	 left:43%;
+
+ }
+ 
+}

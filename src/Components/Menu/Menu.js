@@ -3,7 +3,6 @@ import './Menu.css'
 import {NavLink} from 'react-router-dom'
 
 export default function Menu(){
-	const baseUrl = process.env.PUBLIC_URL;
 	return(
 		<div>
 			<nav className='menu'>

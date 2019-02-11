@@ -1,22 +1,17 @@
 .filter{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-
 	margin-bottom: 20px;
 	width: 100%;
-	padding: 10px;
 }
 
 .filter img{
-	width:200px;
+	max-width:100%;
 	transition:all .3s;
 }
 
 .filter h4{
 	margin-top: 10px;
 	transition:all .3s;
+	text-align: center;
 }
 
 .filter:hover > img{

@@ -1,12 +1,8 @@
-input[type='range']{
-	margin: 10px 15px;
-}
-
 .rangeWrapper{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 }
 
 .rangeWrapper label{
@@ -38,8 +34,8 @@ input[type='range']{
 
 input[type=range] {
 	-webkit-appearance: none;
-	width: 250px;
-	margin: 5.25px 0;
+	width:28vw;
+	/* margin: 5.25px 0; */
  }
  input[type=range]:focus {
 	outline: none;

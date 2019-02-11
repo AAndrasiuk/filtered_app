@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './Components/Header/Header'
 import Aside from './Components/Aside/Aside'
-import Layout from './Components/Layout/Layout'
-import Main from './Components/Main/Main'
+import Layout from './hoc/Layout/Layout'
+import Main from './hoc/Main/Main'
 import ImageContainer from './Components/ImageContainer/ImageContainer'
 import logo from './Img/Untitled-1.png'
 import filter_pic_1 from './Img/filter_example_1.jpeg' 
-
+import './media.css'
 
 
 class App extends Component {

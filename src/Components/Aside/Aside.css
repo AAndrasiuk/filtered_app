@@ -1,6 +1,4 @@
-aside{
-	height: 100%;
-	width: 25%;
+.aside{
 	border-right: 1px solid grey;	
 	background-color: #1A1D23;
 	color:#fff;

@@ -1,19 +1,16 @@
 .rangeList{
-	margin: 8vh 5vh; 
-	
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	align-items: center;
-	
+	align-items: center;	
 }
 
-.default{
+.default{	
 	background-color: transparent;
 	color:grey;
 	border:none;
 	outline: none;
-	margin-bottom: 50px;
+	margin: 25px 0;
 }
 
 .default:hover{
