@@ -1,18 +1,17 @@
 .InputWrapper{
 	display: flex;
-	justify-content: center;
-	
+	justify-content: space-between;
+	width: 75%;
 	margin-bottom: 15px;
 	height: 35px;
+	margin-top: 30px;
 }
 
 .Input{
 	box-sizing: border-box;
 	height: 35px;
-	
 	background-color: transparent;
 	border-radius: 5px;
-	/* border:1px solid white; */
 	border:none;	
 	color:rgba(255,255,255,.3);
 	background-color: #111111;

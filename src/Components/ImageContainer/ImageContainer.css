@@ -1,8 +1,9 @@
 .imageContainer{
-	display: grid;
-	grid-template-areas: 1fr;
-	grid-template-rows: 1fr 6fr;
-	justify-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
 	position: relative;
 	padding:0 15px;
 }
+

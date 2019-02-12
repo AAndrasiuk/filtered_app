@@ -3,33 +3,31 @@
 		grid-template-columns: 300px 5fr;
 	}
 
-	.InputWrapper{
-		margin-top: 50px;
-	}
-
 	.aside{
 		padding:0 40px;
-		/* min-width: 200px; */
 	}
-
 
 	.Img{
-		max-width: 75%;
+		max-width: 74%;
 	}
+
 	input[type=range] {
 		-webkit-appearance: none;
-		width:250px;
+		width:225px;
 	 }
+
 	.Input{
-		width: 40vw;
+		width: 85%;
 	}
+
 	.Button {
-		width:calc(10vw + 5px);
- }
- .Button:after {
-	content:attr(alt);
-		width:10vw;
-}
+		width:calc(14% + 4px);
+	 }
+	 
+	.Button:after {
+		content:attr(alt);
+			width:95%;
+	}
 
 
 }
@@ -38,40 +36,45 @@
 	.main{
 	  grid-template-columns: 250px 6fr;
 	}
+
 	.InputWrapper{
-		margin-top: 50px;
+		width: 90%;
 	}
+
 	.aside{
 		padding:0 20px;
 	}
+
 	.Img{
 		max-width: 90%;
 	}
+
 	input[type=range] {
 		-webkit-appearance: none;
 		width:200px;
 	 }
+
 	.Input{
-		width: 48vw;
+		width: 80%;
 	}
 
 	.Button{
-		width: calc(10vw + 5px);
+		width: calc(19% + 5px);
 	}
 
 	.Button:after {
 		content:attr(alt);
-		width:10vw;
+		width:95%;
+	}
 }
 
-
-}
  @media  screen and (max-width: 768px){
 	.main{
 	  grid-template-columns: 1fr 7fr;
 	}
+
 	.InputWrapper{
-		margin-top: 50px;
+		width: 95%;
 	}
 
 	.aside{
@@ -84,16 +87,20 @@
 	 }
 
 	.Img{
-		max-width: 90%;	
+		max-width: 95%;	
+	}
+
+	.Input{
+		width: 80%;
 	}
 
 	.Button{
-		width: calc(15vw + 5px);
+		width: calc(19% + 5px);
 	}
 
 	.Button:after {
 		content:'Use URL';
-		width:15vw;
+		width:95%;
 }
 
  }
@@ -105,42 +112,52 @@
 
 	.Img{
 		max-width: 100%;	
+		
 	}	
+
+	.imgMain{
+		max-height: 100%;
+	}
 	
 	input[type=range] {
 		-webkit-appearance: none;
 		width:300px;
 	 }
 
+	 .InputWrapper{
+		 width: 100%;
+	 }
+
+	 .Input{
+		 width: 80%;
+	 }
+	 
+
 	.aside{
 		order: 1;
-		margin-bottom: 60px;
-		height:50vh;
 		border:none;
 		position: relative;
 	}
 
 	.imageContainer{
 		order: 0;
-		height:50vh;
-	}
-
-	 .Input{
-		width: 65vw;
 	}
 
 	.Button{
-		width: calc(20vw + 5px);
+		width: calc(19% + 5px);
 	}
+
 	.Button:after {
-		width:20vw;
+		content:'Use URL';
+		width:95%;
 }
 	.InputWrapper{
 		margin-top: 15px;
 	} 
- .rangeWrapper{
-	 margin-bottom: 50px;
- }
+
+	.rangeWrapper{
+		margin-bottom: 15px;
+	}
 
  .filterList{
 	 flex-direction: row;
@@ -155,7 +172,6 @@
 	 position: absolute;
 	 top:90px;
 	 left:43%;
-
  }
  
 }
