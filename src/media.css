@@ -107,7 +107,7 @@
  @media  screen and (max-width: 600px){
 	.main{
 	  grid-template-columns: 1fr;
-	  grid-template-rows: 1fr 2fr;
+	  grid-template-rows: 1fr 400px;
 	}
 
 	.Img{
