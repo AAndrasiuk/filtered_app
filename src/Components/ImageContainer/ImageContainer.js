@@ -12,23 +12,24 @@ export default function ImageContainer(props){
 		setLoaded( isLoaded )
 	}
 
-		const {setUrlPic, settings, imgUrl} = props
-		return(
-			<section className='imageContainer'>
-				<InputWrapper
-						setUrlPic={setUrlPic}
-						isLoaded={isLoaded}
-						loadingHandler={loadingHandler}
+
+	const {setUrlPic, settings, imgUrl} = props
+	return(
+		<section className='imageContainer'>
+			<InputWrapper
+					setUrlPic={setUrlPic}
+					isLoaded={isLoaded}
+					loadingHandler={loadingHandler}
+			/>
+			{isLoaded
+			? 
+				<Image 
+					settings={settings}
+					src={imgUrl}
 				/>
-				{isLoaded 
-				? 
-					<Image 
-						settings={settings}
-						src={imgUrl}
-					/>
-				:
-					<Preloader/>
-				}
-			</section>
+			:
+				<Preloader/>
+			}
+		</section>
 	)
 }

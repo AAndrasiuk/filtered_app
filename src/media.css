@@ -174,4 +174,10 @@
 	 left:43%;
  }
  
+ #loader{
+	 width: 100px;
+	 height: 100px;
+	 margin: -25px 0 0 -50px;
+ }
+
 }
