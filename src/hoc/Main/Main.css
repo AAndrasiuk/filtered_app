@@ -1,4 +1,5 @@
 .main{
 	display: grid;
+	min-height: 100vh;
 }
 

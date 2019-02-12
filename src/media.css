@@ -107,7 +107,7 @@
  @media  screen and (max-width: 600px){
 	.main{
 	  grid-template-columns: 1fr;
-	  grid-template-rows: 1fr 400px;
+	  grid-template-rows: 1fr 450px;
 	}
 
 	.Img{
@@ -170,8 +170,8 @@
 
  .filterList .default{
 	 position: absolute;
-	 top:90px;
-	 left:43%;
+	 top: 67px;
+	 left:42%;
  }
  
  #loader{

@@ -1,3 +1,7 @@
+.Img{
+	margin-bottom: 10px;
+}
+
 .imgMain{
 	max-width: 100%;
 	transition: all .4s;
