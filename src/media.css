@@ -1,6 +1,6 @@
 @media  screen and (min-width: 1171px){
 	.main{
-		grid-template-columns: 1fr 5fr;
+		grid-template-columns: 300px 5fr;
 	}
 
 	.InputWrapper{
@@ -9,6 +9,7 @@
 
 	.aside{
 		padding:0 40px;
+		/* min-width: 200px; */
 	}
 
 
@@ -17,7 +18,7 @@
 	}
 	input[type=range] {
 		-webkit-appearance: none;
-		width:15vw;
+		width:250px;
 	 }
 	.Input{
 		width: 40vw;
@@ -27,7 +28,7 @@
  }
  .Button:after {
 	content:attr(alt);
-		width:15vw;
+		width:10vw;
 }
 
 
@@ -35,20 +36,20 @@
 
 @media  screen and (min-width: 749px) and (max-width: 1170px){
 	.main{
-	  grid-template-columns: 1fr 6fr;
+	  grid-template-columns: 250px 6fr;
 	}
 	.InputWrapper{
 		margin-top: 50px;
 	}
 	.aside{
-		padding:0 30px;
+		padding:0 20px;
 	}
 	.Img{
 		max-width: 90%;
 	}
 	input[type=range] {
 		-webkit-appearance: none;
-		width:20vw;
+		width:200px;
 	 }
 	.Input{
 		width: 48vw;
@@ -72,11 +73,22 @@
 	.InputWrapper{
 		margin-top: 50px;
 	}
+
 	.aside{
 		padding:0 20px;
 	}
+
+	input[type=range] {
+		-webkit-appearance: none;
+		width:175px;
+	 }
+
 	.Img{
 		max-width: 90%;	
+	}
+
+	.Button{
+		width: calc(15vw + 5px);
 	}
 
 	.Button:after {
@@ -88,7 +100,7 @@
  @media  screen and (max-width: 600px){
 	.main{
 	  grid-template-columns: 1fr;
-	  grid-template-rows: 1fr 1fr;
+	  grid-template-rows: 1fr 2fr;
 	}
 
 	.Img{
@@ -97,7 +109,7 @@
 	
 	input[type=range] {
 		-webkit-appearance: none;
-		width:50vw;
+		width:300px;
 	 }
 
 	.aside{
