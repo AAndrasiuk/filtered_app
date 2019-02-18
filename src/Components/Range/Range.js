@@ -9,13 +9,13 @@ export default function Range(props){
 			<label>
 				<h3>{name}</h3>
 				<input
-							type='text'
-							className='filterValue'
-							name={name}
-							value={value}
-							min={min}
-							max={max}
-							onChange={props.handlerChange}
+					type='text'
+					className='filterValue'
+					name={name}
+					value={value}
+					min={min}
+					max={max}
+					onChange={props.handlerChange}
 				/>
 			</label>
 			<input

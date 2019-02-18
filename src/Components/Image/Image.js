@@ -7,6 +7,7 @@ export default function Image(props){
 	const styles = {
 		filter: filters
 	}
+	
 
 	return(
 		<div className="Img">
