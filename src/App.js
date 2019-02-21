@@ -193,7 +193,7 @@ class App extends Component {
           title={this.state.title}
         />
         <Main>
-          <Aside
+        <Aside
             settings={this.state.settings}
             handlerChange={this.handlerChange}
             setDefault={this.setDefault}

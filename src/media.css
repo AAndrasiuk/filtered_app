@@ -70,7 +70,7 @@
 
  @media  screen and (max-width: 768px){
 	.main{
-	  grid-template-columns: 1fr 7fr;
+	  grid-template-columns: 3fr 5fr;
 	}
 
 	.InputWrapper{
