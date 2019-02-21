@@ -5,14 +5,30 @@ import Aside from './Components/Aside/Aside'
 import Layout from './hoc/Layout/Layout'
 import Main from './hoc/Main/Main'
 import ImageContainer from './Components/ImageContainer/ImageContainer'
+
 import logo from './Img/Untitled-1.png'
-import filter_pic_1 from './Img/filter_example_1.jpeg' 
+import nostalgiaSm from './Img/presets/nostalgia.jpg'
+import xpro2Sm from './Img/presets/xPro2.jpg'
+import _1997Sm from './Img/presets/1977.jpg'
+import brannanSm from './Img/presets/brannan.jpg'
+import bwVisionSm from './Img/presets/bwVision.jpg'
+
 import './media.css'
 
 
 class App extends Component {
   state = {
     settings:{
+      blur: 0,
+      saturation: 100,
+      brightness: 1,
+      contrast: 1,
+      invert: 0,
+      grayscale: 0,
+      sepia: 0,
+      hueRotate: 0
+    },
+    defaultSettings:{
       blur: 0,
       saturation: 100,
       brightness: 1,
@@ -93,7 +109,7 @@ class App extends Component {
     imgUrl: 'https://images.unsplash.com/photo-1546911692-38412362ebd6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
     filters:[
       {
-        src: filter_pic_1,
+        src: nostalgiaSm,
         title: 'Nostalgia',
         settings:
           {
@@ -105,7 +121,7 @@ class App extends Component {
           }
       },
       {
-        src: filter_pic_1,
+        src: xpro2Sm,
         title: 'X-PRO 2',
         settings:
           {
@@ -119,7 +135,7 @@ class App extends Component {
           }
       },
       {
-        src: filter_pic_1,
+        src: _1997Sm,
         title: '1977',
         settings:
           {
@@ -130,7 +146,7 @@ class App extends Component {
           }
       },
       {
-        src: filter_pic_1,
+        src: brannanSm,
         title: 'Brannan',
         settings:
           {
@@ -139,7 +155,7 @@ class App extends Component {
           }
       },
       {
-        src: filter_pic_1,
+        src: bwVisionSm,
         title: 'B&W Vision',
         settings:
           {
@@ -155,7 +171,6 @@ class App extends Component {
 
   handlerChange = event => {  
     const {name, value} = event.target
-    console.log(name, " : ", value)
     const settings = {...this.state.settings, [name]: value}
     this.setState({ settings })
   }
@@ -163,21 +178,14 @@ class App extends Component {
   setDefault = event => {
     event.preventDefault()    
     const settings = {...this.state.settings, 
-      blur: 0,
-      saturation: 100,
-      brightness: 1,
-      contrast: 1,
-      invert: 0,
-      grayscale: 0,
-      sepia: 0,
-      hueRotate: 0
+     ...this.state.defaultSettings
     }
     this.setState({ settings })
   }
 
   setFilter = id => {
     const filter = this.state.filters[id].settings;
-    const settings = {...this.state.settings, ...filter};
+    const settings = {...this.state.defaultSettings, ...filter};
     this.setState({ settings })
   }
 

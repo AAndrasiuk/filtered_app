@@ -3,7 +3,7 @@
 ***
 You can try application by following the [link](https://aandrasiuk.github.io/filtered_app/#/).  
 
-Was created using **React.js**. 
+Was created using **React.js**. **React router** was used for preventing page reload and navigate from filters to presets.
 
 You can insert image URL into the input field and apply filters to your image.
 
