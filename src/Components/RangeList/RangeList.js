@@ -4,7 +4,7 @@ import Range from '../Range/Range'
 
 export default function RangeList({settings, handlerChange, setDefault, filtersSettings}){
 	const ranges = filtersSettings.map((setting, id) => 
-		<Range 
+	<Range 
 			name={setting.title}
 			min={setting.settings.min}
 			max={setting.settings.max}
@@ -12,7 +12,7 @@ export default function RangeList({settings, handlerChange, setDefault, filtersS
 			handlerChange={handlerChange}
 			value={settings[`${setting.title}`]}
 			key={id}
-		/>)
+	/>)
 	return(
 		<div className='rangeList'>
 			<button 

@@ -18,7 +18,9 @@ class App extends Component {
       brightness: 1,
       contrast: 1,
       invert: 0,
-      grayscale: 0
+      grayscale: 0,
+      sepia: 0,
+      hueRotate: 0
     },
     filtersSettings:[
       {
@@ -68,6 +70,22 @@ class App extends Component {
           max: 1,
           step: 0.05
         }
+      },
+      {
+        title:'sepia',
+        settings:{
+          min: 0,
+          max: 1,
+          step: 0.05
+        }
+      },
+      {
+        title:'hueRotate',
+        settings:{
+          min: 0,
+          max: 360,
+          step: 2
+        }
       }
     ],
     title:'Filtered',
@@ -88,14 +106,47 @@ class App extends Component {
       },
       {
         src: filter_pic_1,
-        title: 'Can',
+        title: 'X-PRO 2',
         settings:
           {
             blur: 0,
-            saturation: 50,
-            brightness: 0.5,
-            contrast: 1.85,
-            invert: 1
+            saturation: 150,
+            brightness: 0.8,
+            contrast: 1.3,
+            invert: 0,
+            sepia: 0.3,
+            hueRotate: 340
+          }
+      },
+      {
+        src: filter_pic_1,
+        title: '1977',
+        settings:
+          {
+            saturation: 120,
+            contrast: 0.85,
+            sepia: 0.5,
+            hueRotate: 330
+          }
+      },
+      {
+        src: filter_pic_1,
+        title: 'Brannan',
+        settings:
+          {
+            contrast: 1.4,
+            sepia: 0.5,
+          }
+      },
+      {
+        src: filter_pic_1,
+        title: 'B&W Vision',
+        settings:
+          {
+            invert: 1,
+            grayscale: 1,
+            hueRotate: 30,
+            brightness: 2
           }
       }
     ]
@@ -104,6 +155,7 @@ class App extends Component {
 
   handlerChange = event => {  
     const {name, value} = event.target
+    console.log(name, " : ", value)
     const settings = {...this.state.settings, [name]: value}
     this.setState({ settings })
   }
@@ -116,7 +168,9 @@ class App extends Component {
       brightness: 1,
       contrast: 1,
       invert: 0,
-      grayscale: 0
+      grayscale: 0,
+      sepia: 0,
+      hueRotate: 0
     }
     this.setState({ settings })
   }

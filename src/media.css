@@ -159,18 +159,18 @@
 		margin-bottom: 15px;
 	}
 
+	.rangeWrapper h3{
+		font-size: 16px;
+	}
+
  .filterList{
-	 flex-direction: row;
 	 margin-top: 80px;
+	 display: grid;
+	 grid-template-columns: 1fr 1fr;
+	 grid-template-rows: 1fr 1fr 1fr;
+	 grid-gap: 20px;
  }
 
- .filter:first-child{
-	margin-left: 20px;
- }
- 
- .filter:nth-child(3){
-	margin-left: 20px;
- }
 
  .filterList .default{
 	 position: absolute;
