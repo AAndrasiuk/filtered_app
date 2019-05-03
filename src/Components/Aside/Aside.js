@@ -2,7 +2,7 @@ import React from 'react';
 import './Aside.css'
 import {Route} from 'react-router-dom'
 import RangeList from '../RangeList/RangeList'
-import FilterList from '../FilterList/FilterList'
+import PresetsList from '../PresetsList/PresetsList'
 import Menu from '../Menu/Menu'
 
 export default function Aside(props){
@@ -23,7 +23,7 @@ export default function Aside(props){
 			<Route 
 				path='/filters' 
 				render={() => 
-					<FilterList 
+					<PresetsList 
 						 presets={props.presets}
 						 setPreset={props.setPreset}		
 						 setDefault={props.setDefault}

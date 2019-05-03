@@ -1,9 +1,9 @@
 import React from "react";
-import "./Filter.css";
+import "./Preset.css";
 
-export default function Filter(props) {
+export default function Preset(props) {
    return (
-      <div className="filter" onClick={props.setPreset}>
+      <div className="Preset" onClick={props.setPreset}>
          <img src={props.imgSrc} alt="filter" />
          <h4>{props.title}</h4>
       </div>
