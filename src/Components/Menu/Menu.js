@@ -7,7 +7,7 @@ export default function Menu(){
 		<div>
 			<nav className='menu'>
 				<NavLink to={`/`} className="menu__link" activeClassName={'menu__link-active'} exact>Manual</NavLink>
-				<NavLink to={`/filters`} className="menu__link" activeClassName={'menu__link-active'}>Presets</NavLink>
+				<NavLink to={`/presets`} className="menu__link" activeClassName={'menu__link-active'}>Presets</NavLink>
 			</nav>
 		</div>
 	)

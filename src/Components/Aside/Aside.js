@@ -21,7 +21,7 @@ export default function Aside(props){
 					/>} 
 			/>
 			<Route 
-				path='/filters' 
+				path='/presets' 
 				render={() => 
 					<PresetsList 
 						 presets={props.presets}
