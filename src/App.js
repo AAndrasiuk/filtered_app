@@ -175,8 +175,8 @@ class App extends Component {
    };
 
    setPreset = id => {
-      const filter = this.state.presets[id].settings;
-      const settings = { ...this.state.defaultSettings, ...filter };
+      const preset = this.state.presets[id].settings;
+      const settings = { ...this.state.defaultSettings, ...preset };
       this.setState({ settings });
    };
 

@@ -10,7 +10,6 @@ export default function Menu() {
                to={`/`}
                className="menu__link"
                activeClassName={"menu__link-active"}
-               exact
             >
                Manual
             </NavLink>
