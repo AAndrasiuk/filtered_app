@@ -2,14 +2,14 @@ import React from 'react';
 import './RangeList.css'
 import Range from '../Range/Range'
 
-export default function RangeList({settings, handlerChange, setDefault, filtersSettings}){
+export default function RangeList({settings, changeHandler, setDefault, filtersSettings}){
 	const ranges = filtersSettings.map((setting, id) => 
 	<Range 
 			name={setting.title}
 			min={setting.settings.min}
 			max={setting.settings.max}
 			step={setting.settings.step}
-			handlerChange={handlerChange}
+			changeHandler={changeHandler}
 			value={settings[`${setting.title}`]}
 			key={id}
 	/>)

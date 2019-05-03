@@ -15,7 +15,7 @@ export default function Range(props){
 					value={value}
 					min={min}
 					max={max}
-					onChange={props.handlerChange}
+					onChange={props.changeHandler}
 				/>
 			</label>
 			<input
@@ -25,7 +25,7 @@ export default function Range(props){
 				max={max}
 				step={step}
 				value={value}
-				onChange={props.handlerChange}
+				onChange={props.changeHandler}
 			/>			
 	</div>
 	)

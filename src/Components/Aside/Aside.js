@@ -15,7 +15,7 @@ export default function Aside(props){
 				render={() => 
 					<RangeList 
 						settings={props.settings}
-						handlerChange={props.handlerChange}
+						changeHandler={props.changeHandler}
 						setDefault={props.setDefault}
 						filtersSettings={props.filtersSettings}
 					/>} 
@@ -24,8 +24,8 @@ export default function Aside(props){
 				path='/filters' 
 				render={() => 
 					<FilterList 
-						 filters={props.filters}
-						 setFilter={props.setFilter}		
+						 presets={props.presets}
+						 setPreset={props.setPreset}		
 						 setDefault={props.setDefault}
 					/>} 
 			/>
